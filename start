@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Cleanly kill supervisor when container is stopped
+trap 'kill $(jobs -p)' EXIT
+
+cd /opt/Sick-Beard
+./SickBeard.py --datadir=/opt/sick-data/
+
