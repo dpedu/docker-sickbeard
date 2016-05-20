@@ -4,5 +4,4 @@
 trap 'kill $(jobs -p)' EXIT
 
 cd /opt/Sick-Beard
-./SickBeard.py --datadir=/opt/sick-data/
-
+sudo -Hu sick ./SickBeard.py --datadir=/opt/sick-data/
